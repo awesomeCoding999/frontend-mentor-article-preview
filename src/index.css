@@ -7,12 +7,18 @@
 }
 
 :root {
-  --very-dark-grey-blue: hsl(217, 19%, 35%);
-  --desaturated-dark-blue: hsl(214, 17%, 51%);
-  --greyish-blue: hsl(212, 23%, 69%);
-  --light-greyish-blue: hsl(210, 46%, 95%);
+  --very-dark-grey-blue: #48556a;
+  --desaturated-dark-blue: #6d7f97;
+  --greyish-blue: #9eafc2;
+  --light-greyish-blue: #ecf2f8;
+  --white: #fff;
 }
 
 body {
   font-family: "Manrope", sans-serif;
+  background-color: var(--light-greyish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }

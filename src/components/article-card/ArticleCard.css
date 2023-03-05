@@ -1,0 +1,22 @@
+.card {
+  margin-top: 74px;
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 327px;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.text-container {
+  margin: 36px 32px 0;
+  margin-top: 36px;
+}
+
+.description {
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
