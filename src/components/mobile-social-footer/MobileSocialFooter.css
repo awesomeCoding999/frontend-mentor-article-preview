@@ -1,0 +1,34 @@
+.flex-container {
+  display: flex;
+}
+
+.social-icon-footer {
+  background: var(--very-dark-grey-blue);
+  border-radius: 0px 0px 10px 10px;
+  padding: 22px 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container {
+  margin-left: 21px;
+}
+
+.icon:not(:first-of-type) {
+  margin-left: 16px;
+}
+
+.social-share-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.share-text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--greyish-blue);
+}

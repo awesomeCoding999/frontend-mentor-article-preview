@@ -1,5 +1,5 @@
 import MichelleAvatar from "../../../images/avatar-michelle.jpg";
-import { ShareIcon } from "../share-icon/ShareIcon";
+import { SocialShareIcon } from "../icons/SocialShareIcon";
 import "./MobileFooter.css";
 
 export const MobileFooter = () => {
@@ -12,7 +12,7 @@ export const MobileFooter = () => {
           <p className="avatar-date">28 Jun 2020</p>
         </div>
       </div>
-      <ShareIcon />
+      <SocialShareIcon />
     </footer>
   );
 };

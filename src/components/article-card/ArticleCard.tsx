@@ -7,7 +7,7 @@ import "../article-card/ArticleCard.css";
 import { useState } from "react";
 
 export const ArticleCard = () => {
-  const [isSocialMediaBarShowing, setIsSocialMediaBarShowing] = useState(false);
+  const [isSocialMediaBarShowing, setIsSocialMediaBarShowing] = useState(true);
 
   return (
     <div className="card">
@@ -24,7 +24,11 @@ export const ArticleCard = () => {
           help you make any room feel complete.
         </p>
       </div>
-      {isSocialMediaBarShowing ? <MobileSocialFooter /> : <MobileFooter />}
+      {isSocialMediaBarShowing ? (
+        <MobileSocialFooter isSocialMediaBarShowing={isSocialMediaBarShowing} />
+      ) : (
+        <MobileFooter />
+      )}
     </div>
   );
 };
