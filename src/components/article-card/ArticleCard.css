@@ -16,7 +16,19 @@
   margin-top: 36px;
 }
 
+.tag-line {
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--very-dark-grey-blue);
+}
+
 .description {
   margin-top: 12px;
   margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.121875px;
+  color: var(--grey);
 }

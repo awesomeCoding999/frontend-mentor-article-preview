@@ -1,7 +1,9 @@
-.social-share-icon {
+.social-share-btn {
   background-color: var(--light-greyish-blue);
   border-radius: 50%;
+  border: none;
   padding: 9px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
