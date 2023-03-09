@@ -31,3 +31,17 @@
   letter-spacing: 0.121875px;
   color: var(--grey);
 }
+
+@media (min-width: 1024px) {
+  .card {
+    margin-top: 260px;
+    display: flex;
+    width: 730px;
+  }
+
+  .hero-img {
+    width: 285px;
+    height: 280px;
+    border-radius: 10px 0 0 10px;
+  }
+}

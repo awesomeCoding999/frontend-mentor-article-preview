@@ -34,3 +34,9 @@
   letter-spacing: 0.121875px;
   color: var(--greyish-blue);
 }
+
+.social-share-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
