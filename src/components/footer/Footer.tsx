@@ -1,12 +1,17 @@
 import MichelleAvatar from "../../../images/avatar-michelle.jpg";
 import { SocialShareIcon } from "../icons/SocialShareIcon";
+import { SocialBtn } from "../social-btn/SocialBtn";
 import "../footer/Footer.css";
 
 type FooterProps = {
   toggleSocialMediaBar: () => void;
+  isSocialMediaBarShowing: boolean;
 };
 
-export const Footer = ({ toggleSocialMediaBar }: FooterProps) => {
+export const Footer = ({
+  toggleSocialMediaBar,
+  isSocialMediaBarShowing,
+}: FooterProps) => {
   return (
     <footer className="mobile-footer">
       <div className="avatar-container">
@@ -16,9 +21,10 @@ export const Footer = ({ toggleSocialMediaBar }: FooterProps) => {
           <p className="avatar-date">28 Jun 2020</p>
         </div>
       </div>
-      <button onClick={toggleSocialMediaBar} className="social-share-btn">
-        <SocialShareIcon />
-      </button>
+      <SocialBtn
+        isSocialMediaBarShowing={isSocialMediaBarShowing}
+        toggleSocialMediaBar={toggleSocialMediaBar}
+      />
     </footer>
   );
 };

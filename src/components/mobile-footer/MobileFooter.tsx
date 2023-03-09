@@ -1,7 +1,6 @@
-import { ActiveSocialShareIcon } from "../icons/ActiveSocialShareIcon";
-import { SocialShareIcon } from "../icons/SocialShareIcon";
 import { SocialBar } from "../social-bar/SocialBar";
 import { Footer } from "../footer/Footer";
+import { SocialBtn } from "../social-btn/SocialBtn";
 import "../mobile-footer/MobileFooter.css";
 
 type MobileFooterProps = {
@@ -18,19 +17,16 @@ export const MobileFooter = ({
       {isSocialMediaBarShowing ? (
         <footer className="social-icon-footer flex-container">
           <SocialBar />
-          <button
-            onClick={toggleSocialMediaBar}
-            className="social-share-btn active-social-bar-btn"
-          >
-            {isSocialMediaBarShowing ? (
-              <ActiveSocialShareIcon />
-            ) : (
-              <SocialShareIcon />
-            )}
-          </button>
+          <SocialBtn
+            isSocialMediaBarShowing={isSocialMediaBarShowing}
+            toggleSocialMediaBar={toggleSocialMediaBar}
+          />
         </footer>
       ) : (
-        <Footer toggleSocialMediaBar={toggleSocialMediaBar} />
+        <Footer
+          isSocialMediaBarShowing={isSocialMediaBarShowing}
+          toggleSocialMediaBar={toggleSocialMediaBar}
+        />
       )}
     </>
   );

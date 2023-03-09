@@ -1,0 +1,9 @@
+.social-share-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.social-share-btn.active-social-bar-btn {
+  padding-top: 10px;
+}
