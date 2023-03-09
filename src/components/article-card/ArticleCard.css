@@ -44,4 +44,14 @@
     height: 280px;
     border-radius: 10px 0 0 10px;
   }
+
+  .tag-line {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+  }
 }
