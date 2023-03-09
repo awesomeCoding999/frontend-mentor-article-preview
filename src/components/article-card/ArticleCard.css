@@ -4,6 +4,7 @@
   border-radius: 10px;
   width: 327px;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  position: relative;
 }
 
 .hero-img {
@@ -53,5 +54,29 @@
 
   .description {
     margin-bottom: 20px;
+  }
+
+  .social-widget {
+    box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+    background-color: var(--very-dark-grey-blue);
+    width: 248px;
+    border-radius: 10px;
+    padding: 8px 36px 17px;
+    position: absolute;
+    top: 129px;
+    left: 550px;
+  }
+
+  .social-widget:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px var(--very-dark-grey-blue);
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
   }
 }

@@ -1,8 +1,6 @@
 import { ActiveSocialShareIcon } from "../icons/ActiveSocialShareIcon";
 import { SocialShareIcon } from "../icons/SocialShareIcon";
-import FacebookIcon from "../../../images/icon-facebook.svg";
-import TwitterIcon from "../../../images/icon-twitter.svg";
-import PinterestIcon from "../../../images/icon-pinterest.svg";
+import { SocialBar } from "../social-bar/SocialBar";
 import { Footer } from "../footer/Footer";
 import "../mobile-footer/MobileFooter.css";
 
@@ -19,14 +17,7 @@ export const MobileFooter = ({
     <>
       {isSocialMediaBarShowing ? (
         <footer className="social-icon-footer flex-container">
-          <div className="icon-and-text-container flex-container">
-            <p className="share-text">share</p>
-            <div className="icon-container flex-container">
-              <img className="icon" src={FacebookIcon} alt="" />
-              <img className="icon" src={TwitterIcon} alt="" />
-              <img className="icon" src={PinterestIcon} alt="" />
-            </div>
-          </div>
+          <SocialBar />
           <button
             onClick={toggleSocialMediaBar}
             className="social-share-btn active-social-bar-btn"

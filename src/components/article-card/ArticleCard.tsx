@@ -4,6 +4,7 @@ import { DesktopSocialFooter } from "../desktop-social-footer/DesktopSocialFoote
 import DeskImg from "../../../images/drawers.jpg";
 import { MobileFooter } from "../mobile-footer/MobileFooter";
 import { Footer } from "../footer/Footer";
+import { SocialBar } from "../social-bar/SocialBar";
 import "../article-card/ArticleCard.css";
 
 export const ArticleCard = () => {
@@ -30,6 +31,10 @@ export const ArticleCard = () => {
           </p>
         </div>
         <Footer toggleSocialMediaBar={toggleSocialMediaBar} />
+        <div className="social-widget">
+          <SocialBar />
+        </div>
+
         {/* <MobileFooter
           isSocialMediaBarShowing={isSocialMediaBarShowing}
           toggleSocialMediaBar={toggleSocialMediaBar}
