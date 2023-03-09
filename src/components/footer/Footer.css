@@ -1,0 +1,36 @@
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.mobile-footer,
+.avatar-container {
+  display: flex;
+}
+
+.mobile-footer {
+  margin: 0 32px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar-text {
+  margin-left: 1rem;
+}
+
+.avatar-name {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.121875px;
+  color: var(--very-dark-grey-blue);
+}
+
+.avatar-date {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.121875px;
+  color: var(--greyish-blue);
+}
