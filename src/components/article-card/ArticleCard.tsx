@@ -1,20 +1,23 @@
 import { useState } from "react";
-import { DesktopFooter } from "../desktop-footer/DesktopFooter";
-import { DesktopSocialFooter } from "../desktop-social-footer/DesktopSocialFooter";
 import DeskImg from "../../../images/drawers.jpg";
 import { MobileFooter } from "../mobile-footer/MobileFooter";
 import { Footer } from "../footer/Footer";
 import { SocialBar } from "../social-bar/SocialBar";
-import { ActiveSocialShareIcon } from "../icons/ActiveSocialShareIcon";
 import "../article-card/ArticleCard.css";
 
 export const ArticleCard = () => {
-  const [isSocialMediaBarShowing, setIsSocialMediaBarShowing] = useState(false);
-  //TODO: set to innerwidth
-  const [isDesktopViewShowing, setIsDesktopViewShowing] = useState(true);
+  const [isSocialMediaBarShowing, setIsSocialMediaBarShowing] =
+    useState<boolean>(false);
+  const [deviceWidth, setDeviceWidth] = useState<number>(window.innerWidth);
+  const [isDesktopViewShowing, setIsDesktopViewShowing] =
+    useState<boolean>(true);
 
   const toggleSocialMediaBar = () =>
     setIsSocialMediaBarShowing(!isSocialMediaBarShowing);
+
+  window.addEventListener("resize", () => {
+    setDeviceWidth(window.innerWidth);
+  });
 
   return (
     <div className="card">
@@ -31,18 +34,24 @@ export const ArticleCard = () => {
             help you make any room feel complete.
           </p>
         </div>
-        <Footer
-          isSocialMediaBarShowing={isSocialMediaBarShowing}
-          toggleSocialMediaBar={toggleSocialMediaBar}
-        />
-        <div className="social-widget">
-          <SocialBar />
-        </div>
-
-        {/* <MobileFooter
-          isSocialMediaBarShowing={isSocialMediaBarShowing}
-          toggleSocialMediaBar={toggleSocialMediaBar}
-        /> */}
+        {deviceWidth >= 1024 ? (
+          <>
+            <Footer
+              isSocialMediaBarShowing={isSocialMediaBarShowing}
+              toggleSocialMediaBar={toggleSocialMediaBar}
+            />
+            {isSocialMediaBarShowing && (
+              <div className="social-widget">
+                <SocialBar />
+              </div>
+            )}
+          </>
+        ) : (
+          <MobileFooter
+            isSocialMediaBarShowing={isSocialMediaBarShowing}
+            toggleSocialMediaBar={toggleSocialMediaBar}
+          />
+        )}
       </div>
     </div>
   );
