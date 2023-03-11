@@ -9,8 +9,8 @@
 }
 
 .mobile-footer {
-  margin: 0 32px;
-  padding-bottom: 20px;
+  margin: 0 2rem;
+  padding-bottom: 1.25rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -21,7 +21,7 @@
 
 .avatar-name {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 20px;
   letter-spacing: 0.121875px;
   color: var(--very-dark-grey-blue);
@@ -29,7 +29,7 @@
 
 .avatar-date {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 20px;
   letter-spacing: 0.121875px;
   color: var(--greyish-blue);

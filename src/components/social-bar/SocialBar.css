@@ -4,20 +4,20 @@
 
 .icon-and-text-container,
 .social-share-btn.active-social-bar-btn {
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .icon-container {
-  margin-left: 21px;
+  margin-left: 1.313rem;
 }
 
 .icon:not(:first-of-type) {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .share-text {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;

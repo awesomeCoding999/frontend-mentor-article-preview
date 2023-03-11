@@ -9,8 +9,6 @@ export const ArticleCard = () => {
   const [isSocialMediaBarShowing, setIsSocialMediaBarShowing] =
     useState<boolean>(false);
   const [deviceWidth, setDeviceWidth] = useState<number>(window.innerWidth);
-  const [isDesktopViewShowing, setIsDesktopViewShowing] =
-    useState<boolean>(true);
 
   const toggleSocialMediaBar = () =>
     setIsSocialMediaBarShowing(!isSocialMediaBarShowing);

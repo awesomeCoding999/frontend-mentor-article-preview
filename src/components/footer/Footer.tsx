@@ -1,5 +1,4 @@
 import MichelleAvatar from "../../../images/avatar-michelle.jpg";
-import { SocialShareIcon } from "../icons/SocialShareIcon";
 import { SocialBtn } from "../social-btn/SocialBtn";
 import "../footer/Footer.css";
 
