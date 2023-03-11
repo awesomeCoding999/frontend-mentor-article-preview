@@ -13,6 +13,7 @@ export const SocialBtn = ({
 }: SocialBtnProps) => {
   return (
     <button
+      aria-label="social share button"
       onClick={toggleSocialMediaBar}
       className="social-share-btn active-social-bar-btn"
     >
